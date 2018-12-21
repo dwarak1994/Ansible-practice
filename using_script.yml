@@ -1,0 +1,8 @@
+---
+- name: practice
+  hosts: localhost
+  tasks:
+    - name: exexcuting a script
+      script: /home/dwarak/Ansible-practice/thisex.sh
+    - name: copying the file
+      script: /home/dwarak/Yadav/thisex.sh

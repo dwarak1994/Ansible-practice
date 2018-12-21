@@ -1,0 +1,10 @@
+---
+- name: executing a shell command
+  hosts: localhost
+  tasks:
+    - name: executing a shell command
+      shell: ls -la
+      register: op
+    - name: seeing the output
+      debug:
+        msg: "{{op}}"
