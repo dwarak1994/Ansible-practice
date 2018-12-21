@@ -1,0 +1,11 @@
+---
+- name: exec a command
+  hosts: localhost
+  tasks:
+  - name: creating file
+    command: touch thisex.txt
+    register: output_file
+  - name: displaying output file
+    debug:
+      msg: "{{output_file}}"    
+- include: includex.yml

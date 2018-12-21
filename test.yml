@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  tasks:
+    - name: executing a command
+      command: ls -la
+      register: output_files
+    - name: seeing the ouptu file
+      debug:
+        msg: "{{output_files}}"
