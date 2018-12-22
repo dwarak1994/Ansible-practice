@@ -1,0 +1,8 @@
+---
+- name: practice vars
+  hosts: localhost
+  vars:
+    name1: dwarak
+  tasks:
+    - name: creating file using variable
+      command: touch {{name1}}.txt

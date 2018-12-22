@@ -1,0 +1,12 @@
+---
+- name: including vars file
+  hosts: localhost
+
+  tasks:
+    - name: including the var file
+      include_vars:
+        file: vars1.yml
+        name: variables_list
+
+    - name: creating the file
+      command: touch {{name1}}.txt
