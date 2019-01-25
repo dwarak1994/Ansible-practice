@@ -1,0 +1,11 @@
+---
+- name: installing data science modules
+  hosts: localhost
+  tasks:
+    - name: executing using pip command
+      shell: python -m pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
+      register: op
+    - name: seeing op
+      debug:
+        msg: "success"
+      when: op.rc==0

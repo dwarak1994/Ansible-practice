@@ -1,0 +1,14 @@
+---
+  - name: executing a command
+    hosts: localhost
+    tasks:
+      - name: executing the command arg
+        command: ls -ltr
+        args:
+          chdir: /home/dwarak/Desktop/code
+        register: op
+      - name: seeing the op
+        debug:
+          msg: "{{op}}"
+
+  

@@ -1,0 +1,8 @@
+---
+- name: execute shell
+  hosts: localhost
+  tasks:
+    - name: exec shell comand
+      shell: ls -ltr
+      args:
+        chdir: ..

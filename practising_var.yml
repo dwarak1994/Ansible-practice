@@ -3,6 +3,7 @@
   hosts: localhost
   vars:
     name1: dwarak
+    name2: krishna
   tasks:
     - name: creating file using variable
-      command: touch {{name1}}.txt
+      command: touch {{name2}}.txt

@@ -1,0 +1,6 @@
+---
+- name: installing haproxy
+  hosts: localhost
+  tasks:
+    - name: install using shell
+      shell: apt-get install haproxy -y
